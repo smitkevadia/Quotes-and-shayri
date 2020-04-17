@@ -1,0 +1,109 @@
+#main1{
+    background-color: #d2f1f0;
+    height: 70vh;
+    width: 100%;
+    /* margin-top: 200px; */
+}
+section {
+    width: 100%;
+    max-width: 1200px;   
+    height: 100vh;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  #main1 h1{
+      align-items: flex-end;
+      font-size: 35px;
+  }
+  /* section:nth-child(odd) {
+    align-items: flex-end;
+  }
+  section:first-child {
+    margin-top: 30vh;
+  } */
+  .text-wrapper {
+    margin: 6rem 4rem;
+    padding: 1px;
+    width: 100%;
+    margin-top: 200px;
+    max-width: 500px;   
+    position: sticky;
+    top: 6rem;
+  }
+  .fade-from-left{
+    margin-top: -80px;
+    background: 
+      linear-gradient(to top left, transparent 40%, var(--text-color) 80%, var(--text-color) 0) left bottom 25vh / 100vw 30vh fixed no-repeat,
+      linear-gradient(to top, transparent 55%, var(--text-color) 0) left bottom 0vh / 100vw 100vh fixed no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }  
+  .fade-from-top{
+    margin-top: 30px;
+    background: 
+      linear-gradient(to top, transparent 27%,  var(--text-color) 40%, var(--text-color) 0) left bottom 0vh / 100vw 100vh fixed no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }  
+  .fade-from-right{
+    margin-top: 30px;
+    background: 
+      linear-gradient(to top right, transparent 50%, var(--text-color) 60%, var(--text-color) 0) left bottom 25vh / 100vw 30vh fixed no-repeat,
+      linear-gradient(to top, transparent 55%, var(--text-color) 0) left bottom 0vh / 100vw 100vh fixed no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  } 
+  
+  .fade-from-top-dots{
+    background: 
+      url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%23ffffff" fill-opacity="0.8" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E'),
+      linear-gradient(to top, transparent 27%,  var(--text-color) 40%, var(--text-color) 0) left bottom 0vh / 100vw 100vh fixed no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  } 
+
+
+.qleft{
+  right: 0px;
+    width: 130px;
+    height: 130px;
+    margin-top: 50px;
+    position: relative;
+    color: #333591;
+    animation-name: qleft;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+    transition: ease;
+  }
+  @keyframes qleft {
+    0%   {color:#333591; right:-1500px; top:0px; opacity: 0%;}
+     /* 25%  {color:#fffefe25; right:-100px; top:0px;} */
+    /* 50%  {color:#ffffffce; left:0px; top:0px;} 
+    75%  {color:#fdfdfd; left:px; top:0px;} */
+    100% {color:#333591; right:0px; top:0px; opacity: 100%;}
+  }
+
+.qright{
+    right: -400px;
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
+    color: #577fa5;
+    position: relative;
+    animation-name: qright;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    transition: ease;
+  }
+  @keyframes qright {
+    0%   {color:#577fa5; right:-1500px; top:0px; opacity: 0%;}
+    /* 25%  {color:#fffefe25; right:-100px; top:0px;} */
+    /*50%  {color:#fafaface; right:-300px; top:0px;}
+    75%  {color:#fdfdfd; right:-200px; top:0px;} */
+    100% {color:#577fa5; right:-400px; top:0px; opacity: 100%}
+  }

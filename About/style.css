@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+.testimonials{
+  padding: 40px 0;
+  text-align: center;
+
+}
+.testimonials h1{
+  color: #ffffff;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #fbff00;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+.testimonial img:hover{
+  border: 2px solid #fbff0079;
+  transform: scale(1.4,1.4) rotate(360deg);
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  font-family: 'Sen', sans-serif;
+  font-size: 26px;
+}
+.stars{
+  color: #000294;
+  margin-bottom: 20px;
+}
+p{
+  color: #000;
+  font-family: 'Baloo 2', cursive;
+  font-size: 24px;
+}
+
+h6{
+  color:#343434;
+  font-family: 'Baloo 2', cursive;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.social-media{
+  width: 100%;
+  color: #343434;
+  text-align: center;
+}
+.social-media a{
+  text-decoration: none;
+}
+
+.social-media i{
+  height: 15px;
+  opacity: 0.5;
+  width: 15px;
+  margin: 20px 5px;
+  padding: 10px;
+  color: #666666;
+  border-radius: 50%;
+  border: 1px solid #b6b6b6;
+  transition: 0.6s ease-in-out;
+}
+.social-media i:hover{
+  background: #343434;
+  color:#fff;
+  opacity: 1;	
+	border: 1px solid #fbff00;
+  transform: scale(1.4,1.4) rotate(360deg) ;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
